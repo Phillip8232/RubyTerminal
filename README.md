@@ -1,1 +1,1 @@
-Hello world
+Must have Colorized installed

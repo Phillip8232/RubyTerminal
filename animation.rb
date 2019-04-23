@@ -57,7 +57,7 @@ class Ascii_Animation
         puts '       /        \ '
         puts '      /          \ '
         puts '      ____________\ '
-        sleep(0.3)
+        sleep(0.1)
         system "clear"
         puts '_                                 ('
         puts '                                         )'
@@ -76,7 +76,7 @@ class Ascii_Animation
         puts '       /        \ '
         puts '      /          \ '
         puts '      ____________\ '
-        sleep(0.3)
+        sleep(0.2)
         gun ='     //\__/\ \ ~(_]---" ' #how the bullet travel
         while gun != '     //\__/\ \ ~(_]---"                            •'
             puts "        ___"
@@ -95,7 +95,7 @@ class Ascii_Animation
             puts '     /_\  /_\ '
             gun.slice! "•"
             gun += ' •'
-            sleep(0.1)
+            sleep(0.03)
             system "clear"
         end
     end
@@ -196,12 +196,94 @@ class Ascii_Animation
 
     end
 
-
-
-
-
-
-
+    def hit
+        system "clear"
+        puts "                         ,-------.                "
+        puts "                       ,'         `.              "
+        puts "                     ,'             `.            "
+        puts "                    /                 \\          "
+        puts "                   ;    O        O     \\         "
+        puts "                   |                   \\         "
+        puts "                   :        ---        ;          "
+        puts "                    \\    '     `      /          "
+        puts "                     `.             ,'            "
+        puts "                         `------- '               "
+        sleep(0.1)
+        system "clear"
+        puts "                         ,-------.                "
+        puts "                       ,'         `.              "
+        puts "                     ,'             `.            "
+        puts "                    /                 \\          "
+        puts "                   ;    O        O     \\         "
+        puts "  *                |                   \\         "
+        puts "                   :        ---        ;          "
+        puts "                    \\    '     `      /          "
+        puts "                     `.             ,'            "
+        puts "                         `---+--- '               "
+        sleep(0.1)
+        system "clear"
+        puts "                         ,-------.                "
+        puts "                       ,'         `.              "
+        puts "                     ,'             `.            "
+        puts "                    /                 \\          "
+        puts "                   ;    O        O     \\         "
+        puts "       *           |                   \\         "
+        puts "                   :        ---        ;          "
+        puts "                    \\    '     `      /          "
+        puts "                     `.             ,'            "
+        puts "                         `------- '               "
+        sleep(0.1)
+        system "clear"
+        puts "                         ,-------.                "
+        puts "                       ,'         `.              "
+        puts "                     ,'             `.            "
+        puts "                    /                 \\          "
+        puts "                   ;    O        O     \\         "
+        puts "             *     |                   \\         "
+        puts "                   :        ---        ;          "
+        puts "                    \\    '     `      /          "
+        puts "                     `.             ,'            "
+        puts "                         `------- '               "
+        sleep(0.1)
+        system "clear"
+        puts "                         ,-------.                "
+        puts "                       ,'         `.              "
+        puts "                     ,'             `.            "
+        puts "                    /                 \\          "
+        puts "                   ;    O        O     \\         "
+        puts "                  *|                   \\         "
+        puts "                   :        ---        ;          "
+        puts "                    \\    '     `      /          "
+        puts "                     `.             ,'            "
+        puts "                         `------- '               "
+        sleep(0.1)
+        system "clear"
+        puts "                         ,-------.                "
+        puts "                       ,'         `.              "
+        puts "                     ,'             `.            "
+        puts "                    /                 \\ ---;-'   "
+        puts "                   ;    x        x     \\ ---=--  "
+        puts "                   |                   \\----=---:"
+        puts "                   :        ---        ; --._     "
+        puts "                    \\    '     `      /          "
+        puts "                     `.             ,'            "
+        puts "                         `------- '               "
+        sleep(0.1)
+        system "clear"
+        puts "                         ,-------.                            "
+        puts "                       ,'         `.                   HIT    "
+        puts "                     ,'             `.         ,-;--          "
+        puts "                    /                 \\ ---;-' _.=.---''     "
+        puts "                   ;    x        x     \\ ---=--              "
+        puts "                   |                   \\----=---:            "
+        puts "                   :        ---        ; --._     ---':----   "
+        puts "                    \\    '     `      /      '--._  `-       "
+        puts "                     `.             ,'                        "
+        puts "                         `------- '                           "
+        puts ""
+        sleep(0.1)
+        
+    end
 end
 
 animation = Ascii_Animation.new
@@ -209,5 +291,6 @@ animation.front
 animation.shooter
 animation.winner  
 animation.missed
+animation.hit
 
 
