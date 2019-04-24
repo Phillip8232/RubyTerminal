@@ -1,4 +1,4 @@
-require 'colorize'
+require 'colorize' # calling a gem that gives color
 class Ascii_Animation
     def front #loading for front
         counter = 0
@@ -77,8 +77,8 @@ class Ascii_Animation
         puts '      /          \ '
         puts '      ____________\ '
         sleep(0.2)
-        gun ='     //\__/\ \ ~(_]---" ' #how the bullet travel
-        while gun != '     //\__/\ \ ~(_]---"                            •'
+        gun ='     //\__/\ \ ~(_]---" ' #how the gun looks at the start
+        while gun != '     //\__/\ \ ~(_]---"                            •' #make a counter for bullet traveling
             puts "        ___"
             puts "     __|___|__"
             puts "      ('o_o')"
@@ -93,107 +93,127 @@ class Ascii_Animation
             puts '    \| |__| |/'
             puts '     | |  | |'
             puts '     /_\  /_\ '
-            gun.slice! "•"
-            gun += ' •'
-            sleep(0.03)
+            gun.slice! "•" #deletes the previous bullets
+            gun += ' •' #adds the bullet back but with a extra space everytime it loops
+            sleep(0.03) # how fast the animation is
             system "clear"
         end
     end
 
 
     def winner
-        puts "           ,'-',"
-        puts "          :-----:"
-        puts "      (''' , - , ''')         W "
-        puts "      \\  ' .  , `  /"
-        puts "       \\ '   ^    /"
-        puts "        \\ `   -  ,'"
-        puts "         `j_ _,'"
-        puts "    ,- -`\\ \\  /"
-        puts "  ,-      \\_\\/_/'-"
-        puts " ,                 `,"
-        puts " ,                   ,"
-        puts "      /\\          \\ "
-        puts "|    /             \\   ',"
-        sleep(0.2)
-        system "clear"
-        puts "           ,'-',"
-        puts "          :-----:"
-        puts "      (''' , - , ''')         W i"
-        puts "      \\  ' .  , `  /"
-        puts "       \\ '   ^    /"
-        puts "        \\ `   -  ,'"
-        puts "         `j_ _,'"
-        puts "    ,- -`\\ \\  /"
-        puts "  ,-      \\_\\/_/'-"
-        puts " ,                 `,"
-        puts " ,                   ,"
-        puts "      /\\          \\ "
-        puts "|    /             \\   ',"
-        sleep(0.2)
-        system "clear"
-        puts "           ,'-',"
-        puts "          :-----:"
-        puts "      (''' , - , ''')         W i n"
-        puts "      \\  ' .  , `  /"
-        puts "       \\ '   ^    /"
-        puts "        \\ `   -  ,'"
-        puts "         `j_ _,'"
-        puts "    ,- -`\\ \\  /"
-        puts "  ,-      \\_\\/_/'-"
-        puts " ,                 `,"
-        puts " ,                   ,"
-        puts "      /\\          \\ "
-        puts "|    /             \\   ',"
-        sleep (0.2)
-        system "clear"
-        puts "           ,'-',"
-        puts "          :-----:"
-        puts "      (''' , - , ''')         W i n n e"
-        puts "      \\  ' .  , `  /"
-        puts "       \\ '   ^    /"
-        puts "        \\ `   -  ,'"
-        puts "         `j_ _,'"
-        puts "    ,- -`\\ \\  /"
-        puts "  ,-      \\_\\/_/'-"
-        puts " ,                 `,"
-        puts " ,                   ,"
-        puts "      /\\          \\ "
-        puts "|    /             \\   ',"
-        sleep(0.2)
-        system "clear"
-        puts "           ,'-',"
-        puts "          :-----:"
-        puts "      (''' , - , ''')         W i n n e r"
-        puts "      \\  ' .  , `  /"
-        puts "       \\ '   ^    /"
-        puts "        \\ `   -  ,'"
-        puts "         `j_ _,'"
-        puts "    ,- -`\\ \\  /"
-        puts "  ,-      \\_\\/_/'-"
-        puts " ,                 `,"
-        puts " ,                   ,"
-        puts "      /\\          \\ "
-        puts "|    /             \\   ',"
+        counter = 0
+        while counter < 3
+        puts "           ,'-',                              "
+        puts "          :-----:                             "
+        puts "      (''' , - , ''')         W               "
+        puts "      \\  ' .  , `  /                         "
+        puts "       \\ '   ^    /                          "
+        puts "        \\ `   -  ,'                          "
+        puts "         `j_ _,'                              "
+        puts "    ,- -`\\ \\  /                             "
+        puts "  ,-      \\_\\/_/'-                          "
+        puts " ,                 `,                         "
+        puts " ,                   ,                        "
+        puts "      /\\          \\                         "
+        puts "|    /             \\   ',                    "
+        sleep(0.25)
+        system "clear                                       "
+        puts "           ,'-',                              "
+        puts "          :-----:                             "
+        puts "      (''' , - , ''')         W i             "
+        puts "      \\  ' .  , `  /                         "
+        puts "       \\ '   ^    /                          "
+        puts "        \\ `   -  ,'                          "
+        puts "         `j_ _,'                              "
+        puts "    ,- -`\\ \\  /                             "
+        puts "  ,-      \\_\\/_/'-                          "
+        puts " ,                 `,                         "
+        puts " ,                   ,                        "
+        puts "      /\\          \\                         "
+        puts "|    /             \\   ',                    "
+        sleep(0.25)
+        system "clear                                       "
+        puts "           ,'-',                              "
+        puts "          :-----:                             "
+        puts "      (''' , - , ''')         W i n           "
+        puts "      \\  ' .  , `  /                         "
+        puts "       \\ '   ^    /                          "
+        puts "        \\ `   -  ,'                          "
+        puts "         `j_ _,'                              "
+        puts "    ,- -`\\ \\  /                             "
+        puts "  ,-      \\_\\/_/'-                          "
+        puts " ,                 `,                         "
+        puts " ,                   ,                        "
+        puts "      /\\          \\                         "
+        puts "|    /             \\   ',                    "
+        sleep (0.25)
+        system "clear                                       "
+        puts "           ,'-',                              "
+        puts "          :-----:                             "
+        puts "      (''' , - , ''')         W i n n         "
+        puts "      \\  ' .  , `  /                         "
+        puts "       \\ '   ^    /                          "
+        puts "        \\ `   -  ,'                          "
+        puts "         `j_ _,'                              "
+        puts "    ,- -`\\ \\  /                             "
+        puts "  ,-      \\_\\/_/'-                          "
+        puts " ,                 `,                         "
+        puts " ,                   ,                        "
+        puts "      /\\          \\                         "
+        puts "|    /             \\   ',                    "
+        sleep(0.25)
+        system "clear                                       "
+        puts "           ,'-',                              "
+        puts "          :-----:                             "
+        puts "      (''' , - , ''')         W i n n e       "
+        puts "      \\  ' .  , `  /                         "
+        puts "       \\ '   ^    /                          "
+        puts "        \\ `   -  ,'                          "
+        puts "         `j_ _,'                              "
+        puts "    ,- -`\\ \\  /                             "
+        puts "  ,-      \\_\\/_/'-                          "
+        puts " ,                 `,                         "
+        puts " ,                   ,                        "
+        puts "      /\\          \\                         "
+        puts "|    /             \\   ',                    "
+        sleep(0.25)
+        system "clear                                       "
+        puts "           ,'-',                              "
+        puts "          :-----:                             "    
+        puts "      (''' , - , ''')         W i n n e r     "
+        puts "      \\  ' .  , `  /                         "
+        puts "       \\ '   ^    /                          "
+        puts "        \\ `   -  ,'                          "
+        puts "         `j_ _,'                              "
+        puts "    ,- -`\\ \\  /                             "
+        puts "  ,-      \\_\\/_/'-                          "
+        puts " ,                 `,                         "
+        puts " ,                   ,                        "
+        puts "      /\\          \\                         "
+        puts "|    /             \\   ',                    "
         sleep(0.5)
+        system "clear"
+        counter += 1
+        end
     end
 
     def missed
-        system "clear"
-        puts "               ."
-        puts "            \\  :  /          MISSED"
-        puts "             ' _ '"
-        puts "         -= ( (_) ) =-"
-        puts "             .   ."
-        puts "            /  :  \\ "
-        puts "        .-.    '"
-        puts "        |.|"
-        puts "      /)|`|(\\"
-        puts "     (.(|'|)`)"
-        puts "  ~~~~`\\`'./'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        puts "        |.|           ~~"
-        puts "        |`|                            ~~"
-
+        system "clear                                       "
+        puts "               .                              "
+        puts "            \\  :  /          MISSED          "
+        puts "             ' _ '                            "
+        puts "         -= ( (_) ) =-                        "
+        puts "             .   .                            "
+        puts "            /  :  \\                          "
+        puts "        .-.    '                              "
+        puts "        |.|                                   "
+        puts "      /)|`|(\\                                "
+        puts "     (.(|'|)`)                                "
+        puts "  ~~~~`\\`'./'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  "
+        puts "        |.|           ~~                      "
+        puts "        |`|                            ~~     "
+        sleep(0.5)
     end
 
     def hit
@@ -285,12 +305,4 @@ class Ascii_Animation
         
     end
 end
-
-animation = Ascii_Animation.new
-animation.front
-animation.shooter
-animation.winner  
-animation.missed
-animation.hit
-
 
