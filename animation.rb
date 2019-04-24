@@ -4,17 +4,17 @@ class Ascii_Animation
         counter = 0
         while counter < 4 #front loading
         system "clear" 
-        puts "  ______   ______   ____    __    ____ .______     ______   ____    __    ____ ".colorize(:blue)
+        puts " ██████╗ ██████╗ ██╗    ██╗██████╗  ██████╗ ██╗   ██╗".colorize(:yellow)
         sleep(0.1)
-        puts '/      |  /  __  \  \   \  /  \  /   / |   _  \   /  __  \  \   \  /  \  /   / '.colorize(:yellow)
+        puts '██╔════╝██╔═══██╗██║    ██║██╔══██╗██╔═══██╗╚██╗ ██╔╝'.colorize(:white)
         sleep(0.1)
-        puts '|  ,---- |  |  |  |  \   \/    \/   /  |  |_)  | |  |  |  |  \   \/    \/   / '.colorize(:blue)
+        puts '██║     ██║   ██║██║ █╗ ██║██████╔╝██║   ██║ ╚████╔╝ '.colorize(:yellow)
         sleep(0.1)
-        puts '|  |     |  |  |  |   \            /   |   _  <  |  |  |  |   \            /  '.colorize(:yellow)
+        puts '██║     ██║   ██║██║███╗██║██╔══██╗██║   ██║  ╚██╔╝  '.colorize(:white)
         sleep(0.1)
-        puts '|   ----.|   --   |    \    /\    /    |  |_)  | |   --   |    \    /\    /   '.colorize(:blue)
+        puts '╚██████╗╚██████╔╝╚███╔███╔╝██████╔╝╚██████╔╝   ██║   '.colorize(:yellow)
         sleep(0.1)
-        puts ' \______| \______/      \__/  \__/     |______/   \______/      \__/  \__/    '.colorize(:yellow)
+        puts '  ╚═════╝ ╚═════╝  ╚══╝╚══╝ ╚═════╝  ╚═════╝    ╚═╝'.colorize(:yellow)
         sleep(0.5)
         counter += 1
         end
@@ -47,7 +47,7 @@ class Ascii_Animation
         puts '       |\                                 ('
         puts '       | \____________________________________+'
         puts '       | /|/ /      _____."_________________."".  '
-        puts '       | /    |----        _____________   : () :  *'
+        puts '       | /    |----        _____________   : () :  *'.colorize(:red)
         puts '       |      |----| ".0 ___________________".."   '
         puts '       |       \_____/ \0_0'
         puts '       | ------------  ||'
@@ -57,7 +57,7 @@ class Ascii_Animation
         puts '       /        \ '
         puts '      /          \ '
         puts '      ____________\ '
-        sleep(0.1)
+        sleep(0.2)
         system "clear"
         puts '_                                 ('
         puts '                                         )'
@@ -65,9 +65,9 @@ class Ascii_Animation
         puts '                                          )'
         puts '       |\                                 ('
         puts '       | \____________________________________+'
-        puts '       | /|/ /      _____."_________________."".  \|/'
-        puts '       | /    |----        _____________   : () : -*-'
-        puts '       |      |----| ".0 ___________________".."  /|\ '
+        puts '       | /|/ /      _____."_________________."".  \|/'.colorize(:yellow)
+        puts '       | /    |----        _____________   : () : -*-'.colorize(:red)
+        puts '       |      |----| ".0 ___________________".."  /|\ '.colorize(:yellow)
         puts '       |       \_____/ \0_0'
         puts '       | ------------  ||'
         puts '       \       |  ||---||'
@@ -76,7 +76,7 @@ class Ascii_Animation
         puts '       /        \ '
         puts '      /          \ '
         puts '      ____________\ '
-        sleep(0.2)
+        sleep(0.5)
         gun ='     //\__/\ \ ~(_]---" ' #how the gun looks at the start
         while gun != '     //\__/\ \ ~(_]---"                            •' #make a counter for bullet traveling
             puts "        ___"
@@ -95,7 +95,7 @@ class Ascii_Animation
             puts '     /_\  /_\ '
             gun.slice! "•" #deletes the previous bullets
             gun += ' •' #adds the bullet back but with a extra space everytime it loops
-            sleep(0.03) # how fast the animation is
+            sleep(0.08) # how fast the animation is
             system "clear"
         end
     end
@@ -103,117 +103,117 @@ class Ascii_Animation
 
     def winner
         counter = 0
-        while counter < 3
-        puts "           ,'-',                              "
-        puts "          :-----:                             "
-        puts "      (''' , - , ''')         W               "
-        puts "      \\  ' .  , `  /                         "
-        puts "       \\ '   ^    /                          "
-        puts "        \\ `   -  ,'                          "
-        puts "         `j_ _,'                              "
-        puts "    ,- -`\\ \\  /                             "
-        puts "  ,-      \\_\\/_/'-                          "
-        puts " ,                 `,                         "
-        puts " ,                   ,                        "
-        puts "      /\\          \\                         "
-        puts "|    /             \\   ',                    "
-        sleep(0.25)
-        system "clear                                       "
-        puts "           ,'-',                              "
-        puts "          :-----:                             "
-        puts "      (''' , - , ''')         W i             "
-        puts "      \\  ' .  , `  /                         "
-        puts "       \\ '   ^    /                          "
-        puts "        \\ `   -  ,'                          "
-        puts "         `j_ _,'                              "
-        puts "    ,- -`\\ \\  /                             "
-        puts "  ,-      \\_\\/_/'-                          "
-        puts " ,                 `,                         "
-        puts " ,                   ,                        "
-        puts "      /\\          \\                         "
-        puts "|    /             \\   ',                    "
-        sleep(0.25)
-        system "clear                                       "
-        puts "           ,'-',                              "
-        puts "          :-----:                             "
-        puts "      (''' , - , ''')         W i n           "
-        puts "      \\  ' .  , `  /                         "
-        puts "       \\ '   ^    /                          "
-        puts "        \\ `   -  ,'                          "
-        puts "         `j_ _,'                              "
-        puts "    ,- -`\\ \\  /                             "
-        puts "  ,-      \\_\\/_/'-                          "
-        puts " ,                 `,                         "
-        puts " ,                   ,                        "
-        puts "      /\\          \\                         "
-        puts "|    /             \\   ',                    "
-        sleep (0.25)
-        system "clear                                       "
-        puts "           ,'-',                              "
-        puts "          :-----:                             "
-        puts "      (''' , - , ''')         W i n n         "
-        puts "      \\  ' .  , `  /                         "
-        puts "       \\ '   ^    /                          "
-        puts "        \\ `   -  ,'                          "
-        puts "         `j_ _,'                              "
-        puts "    ,- -`\\ \\  /                             "
-        puts "  ,-      \\_\\/_/'-                          "
-        puts " ,                 `,                         "
-        puts " ,                   ,                        "
-        puts "      /\\          \\                         "
-        puts "|    /             \\   ',                    "
-        sleep(0.25)
-        system "clear                                       "
-        puts "           ,'-',                              "
-        puts "          :-----:                             "
-        puts "      (''' , - , ''')         W i n n e       "
-        puts "      \\  ' .  , `  /                         "
-        puts "       \\ '   ^    /                          "
-        puts "        \\ `   -  ,'                          "
-        puts "         `j_ _,'                              "
-        puts "    ,- -`\\ \\  /                             "
-        puts "  ,-      \\_\\/_/'-                          "
-        puts " ,                 `,                         "
-        puts " ,                   ,                        "
-        puts "      /\\          \\                         "
-        puts "|    /             \\   ',                    "
-        sleep(0.25)
-        system "clear                                       "
-        puts "           ,'-',                              "
-        puts "          :-----:                             "    
-        puts "      (''' , - , ''')         W i n n e r     "
-        puts "      \\  ' .  , `  /                         "
-        puts "       \\ '   ^    /                          "
-        puts "        \\ `   -  ,'                          "
-        puts "         `j_ _,'                              "
-        puts "    ,- -`\\ \\  /                             "
-        puts "  ,-      \\_\\/_/'-                          "
-        puts " ,                 `,                         "
-        puts " ,                   ,                        "
-        puts "      /\\          \\                         "
-        puts "|    /             \\   ',                    "
+        while counter < 2
+        system "clear"
+        puts "           ,'-',                              ".colorize(:yellow)
+        puts "          :-----:                             ".colorize(:yellow)
+        puts "      (''' , - , ''')         W               ".colorize(:yellow)
+        puts "      \\  ' .  , `  /                         ".colorize(:yellow)
+        puts "       \\ '   ^    /                          ".colorize(:yellow)
+        puts "        \\ `   -  ,'                          ".colorize(:yellow)
+        puts "         `j_ _,'                              ".colorize(:yellow)
+        puts "    ,- -`\\ \\  /                             ".colorize(:yellow)
+        puts "  ,-      \\_\\/_/'-                          ".colorize(:yellow)
+        puts " ,                 `,                         ".colorize(:yellow)
+        puts " ,                   ,                        ".colorize(:yellow)
+        puts "      /\\          \\                         ".colorize(:yellow)
+        puts "|    /             \\   ',                    ".colorize(:yellow)
         sleep(0.5)
         system "clear"
+        puts "           ,'-',                              ".colorize(:yellow)
+        puts "          :-----:                             ".colorize(:yellow)
+        puts "      (''' , - , ''')         W i             ".colorize(:yellow)
+        puts "      \\  ' .  , `  /                         ".colorize(:yellow)
+        puts "       \\ '   ^    /                          ".colorize(:yellow)
+        puts "        \\ `   -  ,'                          ".colorize(:yellow)
+        puts "         `j_ _,'                              ".colorize(:yellow)
+        puts "    ,- -`\\ \\  /                             ".colorize(:yellow)
+        puts "  ,-      \\_\\/_/'-                          ".colorize(:yellow)
+        puts " ,                 `,                         ".colorize(:yellow)
+        puts " ,                   ,                        ".colorize(:yellow)
+        puts "      /\\          \\                         ".colorize(:yellow)
+        puts "|    /             \\   ',                    ".colorize(:yellow)
+        sleep(0.5)
+        system "clear"
+        puts "           ,'-',                              ".colorize(:yellow)
+        puts "          :-----:                             ".colorize(:yellow)
+        puts "      (''' , - , ''')         W i n           ".colorize(:yellow)
+        puts "      \\  ' .  , `  /                         ".colorize(:yellow)
+        puts "       \\ '   ^    /                          ".colorize(:yellow)
+        puts "        \\ `   -  ,'                          ".colorize(:yellow)
+        puts "         `j_ _,'                              ".colorize(:yellow)
+        puts "    ,- -`\\ \\  /                             ".colorize(:yellow)
+        puts "  ,-      \\_\\/_/'-                          ".colorize(:yellow)
+        puts " ,                 `,                         ".colorize(:yellow)
+        puts " ,                   ,                        ".colorize(:yellow)
+        puts "      /\\          \\                         ".colorize(:yellow)
+        puts "|    /             \\   ',                    ".colorize(:yellow)
+        sleep (0.5)
+        system "clear"
+        puts "           ,'-',                              ".colorize(:yellow)
+        puts "          :-----:                             ".colorize(:yellow)
+        puts "      (''' , - , ''')         W i n n         ".colorize(:yellow)
+        puts "      \\  ' .  , `  /                         ".colorize(:yellow)
+        puts "       \\ '   ^    /                          ".colorize(:yellow)
+        puts "        \\ `   -  ,'                          ".colorize(:yellow)
+        puts "         `j_ _,'                              ".colorize(:yellow)
+        puts "    ,- -`\\ \\  /                             ".colorize(:yellow)
+        puts "  ,-      \\_\\/_/'-                          ".colorize(:yellow)
+        puts " ,                 `,                         ".colorize(:yellow)
+        puts " ,                   ,                        ".colorize(:yellow)
+        puts "      /\\          \\                         ".colorize(:yellow)
+        puts "|    /             \\   ',                    ".colorize(:yellow)
+        sleep(0.5)
+        system "clear"
+        puts "           ,'-',                              ".colorize(:yellow)
+        puts "          :-----:                             ".colorize(:yellow)
+        puts "      (''' , - , ''')         W i n n e       ".colorize(:yellow)
+        puts "      \\  ' .  , `  /                         ".colorize(:yellow)
+        puts "       \\ '   ^    /                          ".colorize(:yellow)
+        puts "        \\ `   -  ,'                          ".colorize(:yellow)
+        puts "         `j_ _,'                              ".colorize(:yellow)
+        puts "    ,- -`\\ \\  /                             ".colorize(:yellow)
+        puts "  ,-      \\_\\/_/'-                          ".colorize(:yellow)
+        puts " ,                 `,                         ".colorize(:yellow)
+        puts " ,                   ,                        ".colorize(:yellow)
+        puts "      /\\          \\                         ".colorize(:yellow)
+        puts "|    /             \\   ',                    ".colorize(:yellow)
+        sleep(0.5)
+        system "clear"
+        puts "           ,'-',                              ".colorize(:yellow)
+        puts "          :-----:                             ".colorize(:yellow)
+        puts "      (''' , - , ''')         W i n n e r     ".colorize(:yellow)
+        puts "      \\  ' .  , `  /                         ".colorize(:yellow)
+        puts "       \\ '   ^    /                          ".colorize(:yellow)
+        puts "        \\ `   -  ,'                          ".colorize(:yellow)
+        puts "         `j_ _,'                              ".colorize(:yellow)
+        puts "    ,- -`\\ \\  /                             ".colorize(:yellow)
+        puts "  ,-      \\_\\/_/'-                          ".colorize(:yellow)
+        puts " ,                 `,                         ".colorize(:yellow)
+        puts " ,                   ,                        ".colorize(:yellow)
+        puts "      /\\          \\                         ".colorize(:yellow)
+        puts "|    /             \\   ',                    ".colorize(:yellow)
+        sleep(0.5)
         counter += 1
         end
     end
 
     def missed
-        system "clear                                       "
-        puts "               .                              "
-        puts "            \\  :  /          MISSED          "
-        puts "             ' _ '                            "
-        puts "         -= ( (_) ) =-                        "
-        puts "             .   .                            "
-        puts "            /  :  \\                          "
-        puts "        .-.    '                              "
-        puts "        |.|                                   "
-        puts "      /)|`|(\\                                "
-        puts "     (.(|'|)`)                                "
-        puts "  ~~~~`\\`'./'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  "
-        puts "        |.|           ~~                      "
-        puts "        |`|                            ~~     "
-        sleep(0.5)
+        system "clear                                                        "
+        puts "               .                                               ".colorize(:light_red)   
+        puts "            \\  :  /         MISSED                            ".colorize(:light_red)
+        puts "             ' _ '                                             ".colorize(:light_red)
+        puts "         -= ( (_) ) =-                                         ".colorize(:light_red)
+        puts "             .   .                                             ".colorize(:light_red)
+        puts "            /  :  \\                                           ".colorize(:light_red)
+        puts "        .-.                                                    ".colorize(:green)
+        puts "        |.|                                                    ".colorize(:green)
+        puts "      /)|`|(\\                                                 ".colorize(:green)
+        puts "     (.(|'|)`)                                                 ".colorize(:green)
+        puts "  ~~~~`\\`'./'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                   ".colorize(:green)
+        puts "        |.|           ~~                                       ".colorize(:green)
+        puts "        |`|                            ~~                      ".colorize(:green)
+        sleep(2)
     end
 
     def hit
@@ -281,10 +281,10 @@ class Ascii_Animation
         puts "                         ,-------.                "
         puts "                       ,'         `.              "
         puts "                     ,'             `.            "
-        puts "                    /                 \\ ---;-'   "
-        puts "                   ;    x        x     \\ ---=--  "
-        puts "                   |                   \\----=---:"
-        puts "                   :        ---        ; --._     "
+        puts "                    /                 \\ ---;-'   ".colorize(:red)
+        puts "                   ;    x        x     \\ ---=--  ".colorize(:red)
+        puts "                   |                   \\----=---:".colorize(:red)
+        puts "                   :        ---        ; --._     ".colorize(:red)
         puts "                    \\    '     `      /          "
         puts "                     `.             ,'            "
         puts "                         `------- '               "
@@ -292,17 +292,41 @@ class Ascii_Animation
         system "clear"
         puts "                         ,-------.                            "
         puts "                       ,'         `.                   HIT    "
-        puts "                     ,'             `.         ,-;--          "
-        puts "                    /                 \\ ---;-' _.=.---''     "
-        puts "                   ;    x        x     \\ ---=--              "
-        puts "                   |                   \\----=---:            "
-        puts "                   :        ---        ; --._     ---':----   "
-        puts "                    \\    '     `      /      '--._  `-       "
-        puts "                     `.             ,'                        "
+        puts "                     ,'             `.         ,-;--          ".colorize(:red)
+        puts "                    /                 \\ ---;-' _.=.---''     ".colorize(:red)
+        puts "                   ;    x        x     \\ ---=--              ".colorize(:red)
+        puts "                   |                   \\----=---:            ".colorize(:red)
+        puts "                   :        ---        ; --._     ---':----   ".colorize(:red)
+        puts "                    \\    '     `      /      '--._  `-       ".colorize(:red)
+        puts "                     `.             ,'                        ".colorize(:red)
         puts "                         `------- '                           "
         puts ""
-        sleep(0.1)
-        
+        sleep(2)
+    end
+
+    def credit
+        system "cleaar"
+        puts "██████╗ ███████╗██╗   ██╗███████╗██╗      ██████╗ ██████╗ ███████╗██████╗ ███████╗              ".colorize(:white)
+        puts "██╔══██╗██╔════╝██║   ██║██╔════╝██║     ██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝              ".colorize(:light_green)
+        puts "██║  ██║█████╗  ██║   ██║█████╗  ██║     ██║   ██║██████╔╝█████╗  ██████╔╝███████╗              ".colorize(:white)
+        puts "██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║     ██║   ██║██╔═══╝ ██╔══╝  ██╔══██╗╚════██║              ".colorize(:light_green)
+        puts "██████╔╝███████╗ ╚████╔╝ ███████╗███████╗╚██████╔╝██║     ███████╗██║  ██║███████║              ".colorize(:white)
+        puts "╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝              "
+        puts "██╗  ██╗ █████╗ ████████╗███████╗       ██╗       ██████╗ ██╗  ██╗██╗██╗     ██╗     ██╗██████╗ ".colorize(:red)
+        puts "██║ ██╔╝██╔══██╗╚══██╔══╝██╔════╝       ██║       ██╔══██╗██║  ██║██║██║     ██║     ██║██╔══██╗".colorize(:white)
+        puts "█████╔╝ ███████║   ██║   ███████╗    ████████╗    ██████╔╝███████║██║██║     ██║     ██║██████╔╝".colorize(:light_blue)
+        puts "██╔═██╗ ██╔══██║   ██║   ╚════██║    ██╔═██╔═╝    ██╔═══╝ ██╔══██║██║██║     ██║     ██║██╔═══╝ ".colorize(:red)
+        puts "██║  ██╗██║  ██║   ██║   ███████║    ██████║      ██║     ██║  ██║██║███████╗███████╗██║██║     ".colorize(:white)
+        puts "╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝    ╚═════╝      ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═╝╚═╝     ".colorize(:light_blue)
+        sleep(2)
+        system "clear"
     end
 end
 
+animation = Ascii_Animation.new
+animation.credit
+animation.front
+animation.shooter
+animation.hit
+animation.missed
+animation.winner
