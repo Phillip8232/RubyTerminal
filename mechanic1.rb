@@ -23,7 +23,6 @@ def get_name
     def checking_number_shoot
         continue = true
         while continue
-            puts 
             if @shoot_input == "1" || @shoot_input == "2" || @shoot_input == "3"
                 continue = false
             else
