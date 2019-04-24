@@ -322,11 +322,3 @@ class Ascii_Animation
         system "clear"
     end
 end
-
-animation = Ascii_Animation.new
-animation.credit
-animation.front
-animation.shooter
-animation.hit
-animation.missed
-animation.winner
