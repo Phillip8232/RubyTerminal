@@ -53,41 +53,43 @@
   
 
 
+require 'colorize'
 
-
-
-def shoot
+class Mechanics
+def get_name
     counter = 0
     system "clear"
     while counter <= 0
-
         puts "What's your name  Player1"
         player1 = gets.chomp
+        @player1 = player1.colorize(:light_blue)
         system "clear"
         puts "What's your name  Player2"
         player2 = gets.chomp
+        @player2 = player2.colorize(:light_green)
         system "clear"
         counter += 1
-        
-        end
-        turn = 1
+    end
+end
+def shoot
+    turn = 1
     while true
         case
         when turn.odd? #when odd is  player1 turn
             system "clear"
-            puts "#{player1} please choose where to shoot right, middle, left"
+            puts "#{@player1} please choose where to shoot \nby selecting a number #{ "\n1 - right".colorize(:light_red)} #{ "\n2 - middle".colorize(:white)}#{"\n3 - left".colorize(:green)}"
             shoot_input = gets.chomp
             system "clear"
-            puts "#{player2} please choose where to stand right, middle, left"
+            puts "#{@player2} please choose where to stand \nby selecting a number #{ "\n1 - right".colorize(:light_red)} #{ "\n2 - middle".colorize(:white)}#{"\n3 - left".colorize(:green)}"
             stand_input = gets.chomp
                 
             turn += 1
         when turn.even? #when even is player2 turn
             system "clear"
-            puts "#{player2} please choose where to shoot right, middle, left"
+            puts "#{@player2} please choose where to shoot \nby selecting a number #{ "\n1 - right".colorize(:light_red)} #{ "\n2 - middle".colorize(:white)}#{"\n3 - left".colorize(:green)}"
             shoot_input = gets.chomp
             system "clear"
-            puts "#{player1} please choose where to stand right, middle, left"
+            puts "#{@player1} please choose where to stand \nby selecting a number #{ "\n1 - right".colorize(:light_red)} #{ "\n2 - middle".colorize(:white)}#{"\n3 - left".colorize(:green)}"
             stand_input = gets.chomp
                 
             turn += 1
@@ -96,10 +98,10 @@ def shoot
         if shoot_input == stand_input
             case
             when turn.even?
-             puts "#{player1} has shot #{player2}"
+             puts "#{@player1.colorize(:yellow)} has shot #{@player2.colorize(:red)}"
              puts " "
             when turn.odd?
-             puts "#{player2} has shot #{player1}"
+             puts "#{@player2.colorize(:yellow)} has shot #{@player1.colorize(:red)}"
                     
              end
              break
@@ -111,5 +113,5 @@ def shoot
             end
         end
  end
+end 
     
-    shoot
