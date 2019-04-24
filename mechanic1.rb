@@ -1,58 +1,5 @@
 
-
-
-#      puts "What's your name  Player1"
-#      player1 = gets.chomp
-#      system "clear"
-#      puts "#{player1} please choose where to shoot \nright, middle , left"
-#      player1_answer = gets.chomp
-#      system "clear"
-
-#      puts "What's your name  Player2"
-#      player2 = gets.chomp
-#      system "clear"
-#      puts "#{player2} please choose where to stand \nright, middle , left"
-#      player2_answer = gets.chomp
-#     system "clear"
-
     
-# while true
-#      if player1_answer == player2_answer
-#          puts "Die"   
-#          break
-#      elsif player1_answer != player2_answer
-#          puts "Alive"
-#          system "clear"
-
-#          puts "#{player2} please choose  where to shoot  \nright, middle , left"
-#          player2_answer = gets.chomp
-#          system "clear"
-
-#        puts "#{player1} please choose where to stand \nright, middle , left"
-#        player1_answer = gets.chomp
-#           system "clear"
-
-        
-#            player1_answer != player2_answer
-
-#           puts "#{player1} please choose where to shoot \nright, middle , left"
-#           player1_answer = gets.chomp
-#           system "clear"
-      
-#           puts "#{player2} please choose where to stand \nright, middle , left"
-#           player2_answer = gets.chomp
-#           system "clear"
-
-#         redo
-
-#           end
-#       end
-
-    
-          
-  
-
-
 require 'colorize'
 
 class Mechanics
