@@ -20,6 +20,7 @@ The game is pretty simple to understand we have 2 players and each turn a player
 
 <u>So let's break it down</u>
 we allow the users to choose a name to make it feel more personal.
+
 ![Player1](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player1.PNG)
 
 ![Player2](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player2.PNG)
