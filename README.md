@@ -1,39 +1,58 @@
 # RubyTerminal 
-# Cowboy
+![Cowboy](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/Logo.png)
 
-**by Kats and Phillip**
+#### **What is the goal of creating Cowboy.**
 
-Cowboy is a beginner friendly game that is easy to play and understand the game is very simple and does not require and knowledge to begin playing.
+Cowboy is a side project that we created, the goal of creating this was to make a simple app people could easily dissect, which would allow them to see what ruby can do and also allow them to understand the simplicity of creating things like this.
 
-GitHub repository - <https://github.com/Phillip8232/RubyTerminal>
+#### **<u>How to start the app</u>**
 
-## Idea 
+Note - please install colorize with ```gem install colorize``` this is a gem used which gave our app some color.
 
-The idea behind this game was to introduce people to a really old game that was easy to play and understand. The game does not require any English knowledge despite the name of the game being very western.
+make sure to be on the terminal of where the app folder is currently then;
+to start the app simply run ```ruby index.rb```
 
-The concept of the game is very simple the first player chooses a lane to shoot out of 3 lanes left, middle or right. and the second player chooses where to hide/stand if the first player happens to choose the same lane as the second player , player 1 will win if player 1 happens to miss player 2 becomes the shooter and player 1 must find a place to hide/stand.
 
-## Plan
 
-During the planning stage of Cowboy we initially thought of naming the players, player 1 & player 2.
+#### <u>How to play the game.</u>
 
-we planned to give this game animations using ASCII to make it feel more engaging for our users we also needed to get the input from the players asking them where to stand and where to shoot.
+The game is pretty simple to understand we have 2 players and each turn a player chooses where to stand and where to shoot the goal of the game is to shoot where the player is standing.
 
-## Design
+<u>So let's break it down</u>
+we allow the users to choose a name to make it feel more personal.
+![Player1](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player1.PNG)
 
-During designing phase of our game we added more functionality to the game without changing the core game we wanted this to feel as engaging as possible.
+![Player2](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player2.PNG)
 
-We would then go and design our turn based system which worked by checking whether the variable turn odd or even. we start by making "turn = 1" then every time a player makes a choice it will then add one to turn if turn was odd it was player 1 turn if turn was even it would be players 2 turn this played a major part in our game.
+Player 1 then will select where to shoot.
 
-another design function that we had to make was a string check function so only numbers 1 to 3 can be chosen 1 for right 2 for middle and 3 for right this was created so player wouldn't be able to make mistakes when choosing where to stand.
+![player1_shoot](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player1_shoot.PNG)
 
-## Approach
+Player 2 has to then decide on where to stand.
 
-We approached this by dividing the task one person creates animation and the other person creates the core functions of the game if one of the team members were struggling we would then stop what we are currently working on and help them this allowed us to blitz through trouble we came across.
+![player2_stand](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player2_stand.PNG)
 
-## Challenges 
+If the player shooting misses the the player standing will now have a turn to shoot.
 
-During Designing we came across three major challenges first Challenge being the time constraint we had to add everything we wanted into the game the second challenge being the function to check users input and the third challenge was to figure out a way to switch turns
+![player2_shoot](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player2_shoot.PNG)
+
+and the other player must choose where to stand.
+
+![player1_stand](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/player1_stand.PNG)
+
+If the player does end up getting shot, there will be a short animation that will lead to the fatality. and will be awarded with the winning screen.
+
+![fatality](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/Killing_screen.PNG)
+
+![winning_screen](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/Winning_screen.PNG)
+
+It will also allow you to play again if you press enter.
+
+![let you play again](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/Lets_you_play_again.PNG)
+
+Credit:
+
+![credit screen](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/Credit.png)
 
 
 
