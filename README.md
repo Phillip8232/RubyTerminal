@@ -1,4 +1,3 @@
-# RubyTerminal 
 ![Cowboy](https://github.com/Phillip8232/RubyTerminal/blob/master/Pictures/Logo.png)
 
 #### **What is the goal of creating Cowboy.**
